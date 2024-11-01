@@ -12,9 +12,58 @@ html {
 .Esilehe-banner {
     background: url('banner-background.jpg') no-repeat center center;
     background-size: cover;
-    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.pealehe-tiitel{
+    font-size: 5em;
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
+    flex-grow: 1;
+}
+.menüü-nupp {
+    position: absolute;
+    right: 20px;
+    top: 15%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.menüü-ikoon {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menüü-ikoon span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.menüü-sisu {
+    display: none; /* Initially hide the menu content */
+    text-align: center;
+    margin-top: 10px;
+}
+.menüü-nupp:hover + .menüü-sisu,
+.menüü-sisu:hover {
+    display: block;
+}
+.menüü-sisu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.menüü-sisu a:hover {
+    color: #000000;
 }
 .Pealeht {
     max-width: 1200px;
