@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esileht</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .Esilehe-banner {
+            background: url('banner-background.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .Pealeht {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px;
+        }
+        .mäed-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        .mäekast {
+            width: 30%;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 15px;
+        }
+        .mäekast img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px 0 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgb(253, 253, 253);
+        }
+        table, th, td {
+            border: 2px solid #000000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="Esilehe-banner" style="background-image: url('https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg');">
+            <h1 style="font-size: 5em;">Pealeht</h1>
+        </div>
+    </header>
+    <div class="Pealeht">
+        <section>
+            <h2 style="font-size: 2.5em;">Ülevaade</h2>
+            <p>Mäed on looduskaunid sihtkohad, mis pakuvad võrratuid vaateid ja erakordseid matkamise võimalusi. Tutvu erinevate mägedega, igaüks neist pakub ainulaadseid elamusi. Allpool leiate ülevaate meie kolme populaarseima mäe kohta.</p>
+        </section>
+        <div class="mäed-container">
+            <section class="mäekast">
+                <img src="https://suurmunamagi.ee/wp-content/uploads/2021/10/KRL-MunamagiDROON-9-1536x1150.jpg" alt="Mägi A">
+                <h3>Mägi A</h3>
+                <p>Mägi A on ideaalne peredele ja algajatele matkajatele. Looduskaunid rajad ja vähem kärsitust nõudvad matkarajad teevad selle mäe populaarseks sihtkohaks.</p>
+                <a href="magi-a.html">Loe lähemalt Mägi A kohta</a>
+            </section>
+            <section class="mäekast">
+                <img src="magib.jpg" alt="Mägi B">
+                <h3>Mägi B</h3>
+                <p>Mägi B on sobilik neile, kes otsivad tõelist matkamise väljakutset. Selle mäe rajad on mitmekülgsed ja pakuvad palju põnevust.</p>
+                <a href="magi-b.html">Loe lähemalt Mägi B kohta</a>
+            </section>
+            <section class="mäekast">
+                <img src="magic.jpg" alt="Mägi C">
+                <h3>Mägi C</h3>
+                <p>Mägi C on meie kõige kõrgem ja nõudlikum mägi, mis sobib kogenud matkajatele. Väljakutsuvad rajad ja hingematvad vaated on kõik, mida võiksite soovida.</p>
+                <a href="magi-c.html">Loe lähemalt Mägi C kohta</a>
+            </section>
+        </div>
+        <section>
+            <h2 style="font-size: 2.5em;">Mägede raskustaseme võrdlus</h2>
+            <table>
+                <caption>Võrdlus meie populaarseimate mägede vahel, sealhulgas kõrgus ja raskusaste<br></br></caption>
+                <thead>
+                    <tr>
+                        <th>Mägi</th>
+                        <th>Kõrgus (m)</th>
+                        <th>Raskusaste</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="magi-c.html">Mägi A</a></td>
+                        <td>2000</td>
+                        <td>Kerge</td>
+                    </tr>
+                    <tr>
+                        <td><a href="magi-c.html">Mägi B</a></td>
+                        <td>2500</td>
+                        <td>Kesk</td>
+                    </tr>
+                    <tr>
+                        <td><a href="magi-c.html">Mägi C</a></td>
+                        <td>3000</td>
+                        <td>Raske</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
