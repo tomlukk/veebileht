@@ -1,0 +1,86 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+.Esilehe-banner {
+    background: url('banner-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.Pealeht {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+}
+.mäed-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.mäekast {
+    width: 30%;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 15px;
+}
+.mäekast img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgb(253, 253, 253);
+}
+table, th, td {
+    border: 2px solid #000000;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.background_image {
+    position: relative;
+    height: 300px;
+}
+.background_image img { 
+    display: block;
+    width: 100%;
+}
+
+
+.no-pad {
+    display: block;
+    margin: 0;
+    padding: 0%;
+}
+
+
+p1 {
+    color:rgb(0, 0, 0)
+}
+    **/
