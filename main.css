@@ -23,10 +23,7 @@ html {
     flex-grow: 1;
 }
 .menüü-nupp {
-    position: absolute;
-    right: 20px;
-    top: 15%;
-    transform: translateY(-50%);
+    position: relative;
     background: none;
     border: none;
     cursor: pointer;
@@ -34,6 +31,7 @@ html {
 .menüü-ikoon {
     width: 30px;
     height: 25px;
+    padding-bottom: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,24 +44,34 @@ html {
     border-radius: 2px;
 }
 .menüü-sisu {
-    display: none; /* Initially hide the menu content */
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
     text-align: center;
-    margin-top: 10px;
+    z-index: 10;
 }
-.menüü-nupp:hover + .menüü-sisu,
+.menüü-nupp:hover .menüü-sisu,
 .menüü-sisu:hover {
     display: block;
 }
 .menüü-sisu a {
     display: block;
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     padding: 5px 0;
     margin: 5px 0;
 }
 
 .menüü-sisu a:hover {
-    color: #000000;
+    color: #660000;
 }
 .Pealeht {
     max-width: 1200px;
