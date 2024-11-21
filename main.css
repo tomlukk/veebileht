@@ -9,14 +9,16 @@ html {
     margin: 0;
     padding: 0;
 }
-.Esilehe-banner {
-    background: url('banner-background.jpg') no-repeat center center;
+.header {
+    background-image: url('https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg');
+    /*background: url('banner-background.jpg') no-repeat center center;*/
     background-size: cover;
     display: flex;
     align-items: center;
     padding: 20px;
 }
-.pealehe-tiitel{
+h1 {
+    font-family: Arial, sans-serif;
     font-size: 5em;
     color: #fff;
     text-align: center;
@@ -66,22 +68,22 @@ html {
     padding: 5px 0;
     margin: 5px 0;
 }
-
 .menüü-sisu a:hover {
     color: #660000;
 }
+
 .Pealeht {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     padding: 40px;
 }
-.mäed-container {
+.div-mäekast {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
-.mäekast {
+.kast {
     width: 30%;
     background-color: white;
     padding: 15px;
@@ -89,24 +91,49 @@ html {
     text-align: center;
     border-radius: 15px;
 }
-.mäekast img {
+.kast img {
     width: 100%;
     height: auto;
     border-radius: 15px 15px 0 0;
 }
 table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 10px;
     background-color: rgb(253, 253, 253);
+    font-family: Arial, sans-serif;
 }
-table, th, td {
-    border: 2px solid #000000;
-}
+
 th, td {
+    font-family: Arial, sans-serif;
     padding: 10px;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
     text-align: center;
+    padding: 10px;
 }
+
+table tr th:first-child,
+table tr td:first-child {
+    border-left: 2px solid #000000;
+}
+table tr th{
+    border-top: 2px solid #000000
+}
+table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -133,6 +160,12 @@ th, td {
     padding: 0%;
 }
 
-.infotekst{
+caption {
+    font-family: Arial, sans-serif;
     margin-bottom: 10px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
 }
