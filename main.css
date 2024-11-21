@@ -9,14 +9,25 @@ html {
     margin: 0;
     padding: 0;
 }
+
 .header {
     background-image: url('https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg');
-    /*background: url('banner-background.jpg') no-repeat center center;*/
     background-size: cover;
     display: flex;
     align-items: center;
-    padding: 20px;
+    height:15%;
+    width:100%;
+    position:fixed;
+    top:0;
+    right:0;
+
+
 }
+
+#content {
+    margin-top: 130px;
+}
+
 h1 {
     font-family: Arial, sans-serif;
     font-size: 5em;
@@ -104,6 +115,9 @@ table {
     background-color: rgb(253, 253, 253);
     font-family: Arial, sans-serif;
 }
+th{
+    background-color: 		#e0d8ff
+}
 
 th, td {
     font-family: Arial, sans-serif;
@@ -127,13 +141,18 @@ table tr:first-child th:first-child {
 table tr:first-child th:last-child {
     border-top-right-radius: 10px;
 }
-table tr:last-child td:first-child {
+table tr:last-child:not(.subheader) td:first-child {
     border-bottom-left-radius: 10px;
 }
-table tr:last-child td:last-child {
+table tr:last-child:not(.subheader) td:last-child {
     border-bottom-right-radius: 10px;
 }
-
+.subheader td:first-child{
+    border-left: 0px solid black
+}
+table tr:hover{
+    background: #efefef;
+}
 .overlay {
     position: absolute;
     top: 0;
