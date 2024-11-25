@@ -1,0 +1,96 @@
+{
+    "nimed" : ["Kuutsemägi_Munakas", "Kütiorg", "Kiviõli_seikluskeskus"],
+    "vanusegrupid": {
+        "Täiskasvanud": {
+            "0" : "18-64 a",
+            "1" : "muu"
+        },
+        "Lapsed": {
+            "Lapsed 7-12 a": 0,
+            "Lapsed 7-15 a": 1
+        },
+        "Noored": {
+            "13-17 a": 0
+        },
+        "Seeniorid" :{
+            "65+":0
+        }
+    },
+
+    "Kuutsemägi_Munakas": {
+        "nimi" : "Kuutsemägi/Munakas",
+        "vert_len":"3",
+        "hor_len":"9",
+        "vanused": ["Täiskasvanud", "Noored", "Seeniorid"],
+        "vanusegrupp": [{"Täiskasvanud": 1}, {"noored": 0}, {"seeniorid": 0}],
+        "len_vanusegrupp": ["3", "3", "3"],
+        "pileti_tüübid": ["tavaline", "alates 26.02", "veebis alates 26.02"],
+        "hinnad": { 
+            "1 tund": {
+                "Täiskasvanud": [18, 15, 14.25],
+                "Noored": [15, 12, 11.40],
+                "Seeniorid": [12, 9, 8.55]
+            },
+            "3 tundi": {
+                "Täiskasvanud": [33, 28, 26.60],
+                "Noored": [27, 23, 21.85],
+                "Seeniorid": [21, 18, 17.10]
+            },
+            "Päevapilet": {
+                "Täiskasvanud": [39, 33, 31.35],
+                "Noored": [35, 28, 26.60],
+                "Seeniorid": [28, 22, 20.90]
+            }
+        }
+    },
+
+    "Kütiorg" :{
+        "nimi" : "Kütiorg",
+        "vert_len":"3",
+        "hor_len":"6",
+        "vanused": ["Täiskasvanud", "Lapsed", "Seeniorid"],
+        "vanusegrupp": [{"Täiskasvanud": 1}, {"Lapsed": 0}, {"seeniorid": 0}],
+        "len_vanusegrupp": ["2", "2", "2"],
+        "pileti_tüübid": ["T-N", "R-P"],
+        "hinnad": { 
+            "2 tundi": {
+                "Täiskasvanud": [17, 25],
+                "Noored": [12, 17],
+                "Seeniorid": [12, 17]
+            },
+            "3 tundi": {
+                "Täiskasvanud": [22, 30],
+                "Noored": [15, 22],
+                "Seeniorid": [15, 22]
+            },
+            "Päevapilet": {
+                "Täiskasvanud": [28, 37],
+                "Noored": [18, 28],
+                "Seeniorid": [18, 28]
+            }
+        }
+    },
+    "Kiviõli_seikluskeskus" :{
+        "nimi" : "Kiviõli Seikluskeskus",
+        "vert_len":"3",
+        "hor_len":"2",
+        "vanused": ["Täiskasvanud", "Lapsed"],
+        "vanusegrupp": [{"Täiskasvanud": 1}, {"Lapsed": 0}, {"seeniorid": 0}],
+        "len_vanusegrupp": ["1", "1"],
+        "pileti_tüübid": ["T-P"],
+        "hinnad": { 
+            "1 tund": {
+                "Täiskasvanud": [17],
+                "Lapsed": [12]
+            },
+            "3 tundi": {
+                "Täiskasvanud": [31],
+                "Lapsed": [22]
+            },
+            "Päevapilet": {
+                "Täiskasvanud": [38],
+                "Lapsed": [27]
+            }
+        }
+    }
+}
