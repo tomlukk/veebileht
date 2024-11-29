@@ -3,26 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="main.css">
+        <link href="vaheleht.css" rel="stylesheet">
         <title>Hinnavõrdlus</title>
     </head>
     <body>
         <header>
-            <div class="header">
-                <h1>Hinnavõrdlus</h1>
-                <div class="menüü-nupp">
-                    <button class="menüü-ikoon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                        <span class="menüü-sisu">
-                            <a href="Pealeht.html">Pealeht</a>
-                            <a href="vaheleht_template.html">Loe lähemalt Mägi A kohta</a>
-                            <a href="magi-b.html">Loe lähemalt Mägi B kohta</a>
-                            <a href="magi-c.html">Loe lähemalt Mägi C kohta</a>
-                        </span>
-                    </div> 
-            </div>  
+            <div class="video-container">
+                <div class="video-text">
+                    <h1 class="movingtext" onclick="scrollToSection()">Kuutsemägi</h1>
+                    <p class="popuptext">Üks Eesti mägedest Eesti mägede seas</p>
+                </div>
+                <video autoplay muted loop id="bgvideo">
+                    <source src="img/kuutsemagi.mov" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+                <div class="navbar-helper">
+                    <div class="pre-navbar">
+                        <div class="magi">
+                            <img src="img/navbarmountain.png">
+                        </div>
+                    </div>
+                    <div class="navbar">
+                        <div class="navbuttons">
+                            <div class="navbutton dropdown">
+                                <a href='vaheleht_template.html' class="navlink">MÄED</a>
+                            </div>
+                            <div class="navbutton">
+                                <a href='Pealeht.html' class="navlink">PEALEHT</a>
+                            </div>
+                            <div class="navbutton">
+                                <a href='priceComp.html' class="navlink">HINNAKIRI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--    Valge kast pildipeal   -->
+                <div class="overbox">
+            </div>
+            </div> 
         </header>
         <div class="Pealeht" id="content">
         <section>
