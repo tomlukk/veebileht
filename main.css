@@ -1,5 +1,6 @@
 
 body {
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
@@ -363,12 +364,33 @@ background-color: white;
 transition: width 0.1s ease, background-color 0.1s ease; 
 }
 
-/* Underline appears on hover */
 
 footer {
-    position: flex;
-    align-items: center;
+    width: 100%;
+    display: flex;
+    padding-top: 1rem;
     justify-content: center;
     margin:0 auto;
-    height:5rem;
+    height:14rem;
+    border-top:1px solid black;
+    background-color: rgb(37, 40, 45);
+
 }
+
+.footeritem {
+
+    background-color: rgb(37, 40, 45);
+    width: 20%;
+    height:25%;
+    text-align: center;
+}
+
+.footerlink {
+    text-decoration: none;
+    color: white; 
+    display: flex;
+    padding-bottom: 2px;
+    padding-left: 2rem;
+    
+}
+
