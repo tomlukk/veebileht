@@ -1,19 +1,177 @@
 <!DOCTYPE html> 
 
+<!DOCTYPE html> 
+
 <html lang="ee">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="vaheleht.css">
+    <link href="main.css" rel="stylesheet">
+    <link href="vaheleht.css" rel="stylesheet">
+
     <!--    Tuleb muuta tiitlit   -->
-    <title>Vaheleht</title>
+    <title>Kuutsemägi</title>
 </head>
 <body>
-    <h1>Kuutsemägi</h1>
-    <div class="background_image no-pad">
-        <img class="background_image" src="img/default.jpg" alt="taust">
+    <div class="video-container">
+        <div class="video-text">
+            <h1 class="movingtext" onclick="scrollToSection()">Kuutsemägi</h1>
+            <p class="popuptext">Üks Eesti mägedest Eesti mägede seas</p>
+        </div>
+        <video autoplay muted loop id="bgvideo">
+            <source src="img/kuutsemagi.mov" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <div class="navbar-helper">
+            <div class="pre-navbar">
+                <div class="magi">
+                    <img src="img/navbarmountain.png">
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="navbuttons">
+                    <div class="navbutton dropdown">
+                        <a href='vaheleht_template.html' class="navlink">MÄED</a>
+                    </div>
+                    <div class="navbutton">
+                        <a href='Pealeht.html' class="navlink">PEALEHT</a>
+                    </div>
+                    <div class="navbutton">
+                        <a href='priceComp.html' class="navlink">HINNAKIRI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    Valge kast pildipeal   -->
+        <div class="overbox">
     </div>
-    <div>
-        <p>Lorem ipsum</p>
+    </div>
+
+    <div class="content" id="scrollto">
+        <h2>Miks valida Kuutsemägi</h2>
+        <p>Kuutsemägi on ideaalne sihtkoht, kui otsid nii talviseid kui ka suviseid seiklusi looduses. Meie mägi pakub suurepäraseid võimalusi suusatamiseks, mäesuusatamiseks, matkamiseks ja palju muud. Ükskõik, kas oled kogenud sportlane või alles alustad oma seikluste teekonda, Kuutsemägi pakub kõigile midagi. Lisaks hingematvad vaated ja puhas looduskeskkond tagavad, et iga külastus on ainulaadne ja meeldejääv. Meie infrastruktuur ja teenused on loodud mugavuse ja lõõgastuse tagamiseks, et saaksid nautida igat hetke Kuutsemäel.</p>
     </div>   
+    <div class="contentdivider"></div>
+    <div class="content difficulty sidebyside">
+        <div class="half">
+            <h2>Varustus</h2>
+            <p class='halftext'>Kuutsemägi pakub laia valikut kvaliteetset varustust, mis on mõeldud igasugustes ilmastiku- ja maastikutingimustes seiklemiseks. Valikust leiab suuski, lumelaudasid, matkatooted ja palju muud, et tagada külastajatele täiuslik kogemus igal ajal. Kõik tooted on hoolikalt valitud ja testitud, et tagada kõrgeim töökindlus ja mugavus. Kuutsemäe professionaalne meeskond on alati valmis andma nõu varustuse valikul ja soovitustes, et külastajad saaksid nautida oma aega mägedes muretult.</p>
+            </p>
+        </div>
+        <div class="half">
+            <h2>Hind</h2>
+            <div class="price">
+                <h4 class="cheap">€</h4>
+                <h4 class="transparent">€</h4>
+                <h4 class="transparent">€</h4>
+            </div>
+            <h3>Hind: Odav</h3>
+        </div>
+        <div class="half">
+            <h2>Raskustase</h2>
+            <img src="img/easy-mountain.png" class="difficultyimg">
+            <h3 class="raskus">Raskus: Kerge</h3>
+        </div>
+
+    </div>
+    <div class="contentdivider"></div>
+    <div class="content hinnakiri_vaheleht">
+        <h2>Hinnad</h2>
+        <h3>Hooaja piletid</h3>
+        <table class="vaheleht_table">
+            <thead>
+                <tr>
+                  <th rowspan="2">Pilet</th>
+                </tr>
+                <tr>
+                  <th>Eelmüük</th>
+                  <th>Tavahind</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lapsed 7-12 a</td>
+                  <td>199€</td>
+                  <td>239€</td>
+                </tr>
+                <tr>
+                  <td>Noored 13-17 a, seeniorid 65+ a</td>
+                  <td>259€</td>
+                  <td>299€</td>
+                </tr>
+                <tr>
+                  <td>Täiskasvanud 18-64 a</td>
+                  <td>312€</td>
+                  <td>349€</td>
+                </tr>
+                <tr>
+                  <td>Perepilet (2 täiskasvanut + laps/noor 7-17 a)*</td>
+                  <td>679€</td>
+                  <td>769€</td>
+                </tr>
+                <tr>
+                  <td>Perepilet iga lisalapse/noore kohta</td>
+                  <td>110€</td>
+                  <td>125€</td>
+                </tr>
+              </tbody>
+        </table>
+        <h3>Tavapiletid</h3>
+        <table class="vaheleht_table">
+            <thead>
+                <tr>
+                    <th>Aeg</th>
+                    <th colspan="2">Kuutsemägi</th>
+                </tr>
+                <tr>
+                    <th>Vanus</th>
+                    <th>18-64 a</th>
+                    <th>13-17 a, 7-12 a*, 65+</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 tund</td>
+                    <td>18€</td>
+                    <td>15€</td>
+                </tr>
+                <tr>
+                    <td>2 tundi</td>
+                    <td class="special">n/a</td>
+                    <td>17€</td>
+                </tr>
+                <tr>
+                    <td>3 tundi</td>
+                    <td>33€</td>
+                    <td>28€</td>
+                </tr>
+                <tr>
+                    <td>Päevapilet</td>
+                    <td>39€</td>
+                    <td>33€</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<footer class="footer">
+    <a href="adasd.com">testtestst</a>
+</footer>
 </body>
 </html>
+<script>
+const navLinks = document.querySelectorAll('.navlink');
+
+// Get the current page's URL
+const currentPage = window.location.pathname;
+
+// Loop through the links and check if their href matches the current page
+navLinks.forEach(link => {
+    if (link.href.includes(currentPage)) {
+        link.classList.add('active');  // Add "active" class to the current page link
+    }
+});
+
+function scrollToSection() {
+            const target = document.getElementById("scrollto");
+            target.scrollIntoView({ behavior: "smooth" });
+        }
+</script>
