@@ -5,6 +5,7 @@
 <html lang="ee">
 <head>
     <meta charset="UTF-8">
+    <script src="vaheleht.js"></script>
     <link href="main.css" rel="stylesheet">
     <link href="vaheleht.css" rel="stylesheet">
 
@@ -73,7 +74,7 @@
         </div>
 
     </div>
-    <div class="contentdivider"></div>
+    
     <div class="content hinnakiri_vaheleht">
         <h2>Hinnad</h2>
         <h3>Hooaja piletid</h3>
@@ -152,26 +153,20 @@
             </tbody>
         </table>
     </div>
-<footer class="footer">
-    <a href="adasd.com">testtestst</a>
+    <div class="contentdivider"></div>
+<footer>
+    <div></div>
+    <div class="footeritem"><div></div></div>
+    <div class="footeritem"><a href="adasd.com" class="navlink">conten2</a></div>
+    <div class="footeritem">
+        <div>
+            <h4 class="footerlink darken">Mäed</h4>
+            <a href="vaheleht_template.html" class="footerlink">Kuutsemagi</a>
+            <a href="vaheleht_template.html" class="footerlink">Teine magi</a>
+            <a href="vaheleht_template.html" class="footerlink">Kolmas magi</a>
+        </div>
+    </div>
+    <div class="footeritem"><a href="adasd.com" class="navlink">content4</a></div>
 </footer>
 </body>
 </html>
-<script>
-const navLinks = document.querySelectorAll('.navlink');
-
-// Get the current page's URL
-const currentPage = window.location.pathname;
-
-// Loop through the links and check if their href matches the current page
-navLinks.forEach(link => {
-    if (link.href.includes(currentPage)) {
-        link.classList.add('active');  // Add "active" class to the current page link
-    }
-});
-
-function scrollToSection() {
-            const target = document.getElementById("scrollto");
-            target.scrollIntoView({ behavior: "smooth" });
-        }
-</script>
