@@ -1,19 +1,21 @@
-async function tableHead(){
+async function createTable(mägede_nimed = []){
   let hinnakiri = await fetchCurrentData();
-  let mägede_nimed = hinnakiri.nimed;
 
-  let body = document.body;
+  if (mägede_nimed.length == 0){
+    mägede_nimed = hinnakiri.nimed;
+  };
   let tbl  = document.createElement('table');
   let thead = tbl.createTHead();
   let tbody = tbl.createTBody();
 
-  //pilet
+  //Tabeli Headeri , mille esimene element on "Pilet"
   let tr = thead.insertRow();
   let pilet = document.createElement('th');
   pilet.setAttribute("rowspan", "3")
   pilet.innerHTML = "Piletid"
   tr.appendChild(pilet);
 
+  //Headerisse rida mägede nimedega
   for (let i = 0; i < mägede_nimed.length; i++){
     let len = hinnakiri[mägede_nimed[i]].hor_len;
     let th = document.createElement('th');
@@ -22,7 +24,7 @@ async function tableHead(){
     tr.appendChild(th);
   };
 
-
+  //Rida vanusegruppidega
   tr = thead.insertRow();
   tr.setAttribute("class", "subheader")
   for (const nimi of mägede_nimed){
@@ -38,6 +40,7 @@ async function tableHead(){
     }
   };
 
+  //Rida pileti tüüpidega
   tr = thead.insertRow();
   tr.setAttribute("class", "subheader")
   for (const nimi of mägede_nimed){
@@ -51,8 +54,9 @@ async function tableHead(){
     };
   };
 
-  let u_keys = [];
-  let read = [];
+  let u_keys = []; // Unikaalsed pileti pikkused(kõikide mägede peale kokku)
+  let read = []; // Ridade list. Iga rea esimene element on pileti pikkus.
+  //Leian ühised pileti pikkused
   for (const nimi of mägede_nimed){
     for (const key of Object.keys(hinnakiri[nimi].hinnad)){
       if(!(u_keys.includes(key))){
@@ -60,6 +64,9 @@ async function tableHead(){
       }
     }
   } 
+  u_keys = u_keysSort(u_keys, hinnakiri.sorted_keys)
+
+  //Teen read erinevatele pileti pikkustele
   for (const key of u_keys){
     let tr = tbody.insertRow()
     tr.setAttribute("id", key)
@@ -69,8 +76,12 @@ async function tableHead(){
     read.push(tr)
   }
 
-  for (const nimi of mägede_nimed){
+  //Appendin reale iga pileti pikkusele vastavad hinnad
+  for (const nimi of mägede_nimed){ //Võtan ühe mäe mägede listist ja lisan hinnad tabelisse
     let m_keys = Object.keys(hinnakiri[nimi].hinnad);
+
+    //Kui mäel endal ei ole piletit, mille pikkus on võrdne mõne teise mäe pileti
+    //pikkusega, siis genereerin lahtritesse "-"
     for (const key of u_keys){
       if (!(m_keys.includes(key))){
         for (let k of read){
@@ -91,10 +102,10 @@ async function tableHead(){
       }
     }
     
+    //Lisan pileti hinnad tabelisse.
     for (const key of Object.keys(hinnakiri[nimi].hinnad)){
       for (let k of read){
         if(k.getAttributeNode("id").value == key){
-          console.log(k);
           let i = read.indexOf(k);
           for (const values of Object.values(hinnakiri[nimi].hinnad[key])){
             for (const value of values){
@@ -109,9 +120,9 @@ async function tableHead(){
       }
     } 
   }
-  body.appendChild(tbl);
+  document.getElementById("test").innerHTML = "" //Element tühjaks, et saaks lisada uue tabeli
+  document.getElementById("test").append(tbl)
 }
-
 
 async function fetchCurrentData() {
   const response = await fetch('./hinnad.json');
@@ -119,4 +130,25 @@ async function fetchCurrentData() {
   return json;
 }
 
-tableHead() 
+function u_keysSort(u_keys, sorted_keys){
+  new_keys = [];
+  for (const key of sorted_keys){
+    if (u_keys.includes(key)){
+      new_keys.push(key);
+    }
+  }
+  return new_keys
+}
+
+function loo_tabel(){
+  esimene = document.getElementById("esimene").value
+  teine = document.getElementById("teine").value
+  if (esimene == teine){
+    createTable([esimene])
+  } else{
+    createTable([esimene, teine])
+  }
+}
+
+document.getElementById("esimene").onchange = function() {loo_tabel()};
+document.getElementById("teine").onchange = function() {loo_tabel()};

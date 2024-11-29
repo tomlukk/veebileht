@@ -1,5 +1,7 @@
 {
     "nimed" : ["Kuutsemägi_Munakas", "Kütiorg", "Kiviõli_seikluskeskus"],
+    "sorted_keys": ["1 tund", "2 tundi", "3 tundi", "Päevapilet"],
+    
     "vanusegrupid": {
         "Täiskasvanud": {
             "0" : "18-64 a",
