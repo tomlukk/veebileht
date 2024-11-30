@@ -281,7 +281,7 @@ h2 {
     position: absolute;
     top: 28%;
     right: 26%; 
-    transform: translateY(-50%); /* Centers the image vertically */
+    transform: translateY(-50%);
     z-index: 5;
     display: flex;
     justify-content: center;
@@ -321,10 +321,34 @@ h2 {
     cursor: pointer;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(37, 40, 45);
+    border: 1px solid black;
+    z-index: 10;
+    min-width: 200px;
+    border-radius: 10px;
+    transform: translateX(-25%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+    display: block; 
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -370,6 +394,7 @@ footer {
     display: flex;
     padding-top: 1rem;
     justify-content: center;
+    text-align: left;
     margin:0 auto;
     height:14rem;
     border-top:1px solid black;
@@ -391,6 +416,14 @@ footer {
     display: flex;
     padding-bottom: 2px;
     padding-left: 2rem;
+    padding-bottom: 0.5rem;
     
 }
 
+.footerlogo {
+    position: relative;
+    width: 2.0rem;
+    height: auto;
+    margin-left: 2rem;
+    float: left;
+}

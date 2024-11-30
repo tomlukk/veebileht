@@ -118,6 +118,14 @@
     
 }
 
+.medium {
+    color: rgb(210, 217, 27)
+}
+
+.expensive {
+    color: rgb(232, 19, 49)
+}
+
 .transparent {
     color: rgba(50, 50, 50, 0.3)
 }
