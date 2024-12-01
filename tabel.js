@@ -1,3 +1,5 @@
+//Autor Walter Võikar
+
 async function createTable(mägede_nimed = []){
   let hinnakiri = await fetchCurrentData();
 
@@ -143,11 +145,17 @@ function u_keysSort(u_keys, sorted_keys){
 function loo_tabel(){
   esimene = document.getElementById("esimene").value
   teine = document.getElementById("teine").value
-  if (esimene == teine){
-    createTable([esimene])
-  } else{
-    createTable([esimene, teine])
+  kolmas =document.getElementById("kolmas").value
+  keys = [esimene, teine, kolmas]
+  un_keys = []
+  for (const key of keys){
+    if (!(un_keys.includes(key)) && key != ""){
+      un_keys.push(key)
+    }
   }
+  console.log(un_keys)
+  console.log()
+  createTable(un_keys)
 }
 
 document.getElementById("esimene").onchange = function() {loo_tabel()};
