@@ -83,12 +83,10 @@
     <div class="content hinnakiri_vaheleht">
         <h2>Hinnad</h2>
         <h3>Hooaja piletid</h3>
-        <table class="vaheleht_table">
+        <table id="vaheleht_table">
             <thead>
                 <tr>
                   <th rowspan="2">Pilet</th>
-                </tr>
-                <tr>
                   <th>Eelmüük</th>
                   <th>Tavahind</th>
                 </tr>
@@ -122,16 +120,16 @@
               </tbody>
         </table>
         <h3>Tavapiletid</h3>
-        <table class="vaheleht_table">
+        <table id="vaheleht_table">
             <thead>
                 <tr>
-                    <th>Aeg</th>
-                    <th colspan="2">Kuutsemägi</th>
+                    <th rowspan="2">Aeg</th>
+                    <th colspan="3">Kuutsemägi</th>
                 </tr>
-                <tr>
-                    <th>Vanus</th>
+                <tr class="subheader">
                     <th>18-64 a</th>
-                    <th>13-17 a, 7-12 a*, 65+</th>
+                    <th>13-17 a</th>
+                    <th>7-12 a*, 65+</th>
                 </tr>
             </thead>
             <tbody>
@@ -139,21 +137,19 @@
                     <td>1 tund</td>
                     <td>18€</td>
                     <td>15€</td>
-                </tr>
-                <tr>
-                    <td>2 tundi</td>
-                    <td class="special">n/a</td>
-                    <td>17€</td>
+                    <td>12€</td>
                 </tr>
                 <tr>
                     <td>3 tundi</td>
-                    <td>33€</td>
                     <td>28€</td>
+                    <td>23€</td>
+                    <td>18€</td>
                 </tr>
                 <tr>
                     <td>Päevapilet</td>
-                    <td>39€</td>
                     <td>33€</td>
+                    <td>28€</td>
+                    <td>22€</td>
                 </tr>
             </tbody>
         </table>
