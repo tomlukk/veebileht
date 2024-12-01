@@ -45,3 +45,9 @@
     margin-left: 35vh;
     margin-right:35vh;
 }
+
+.kivioli iframe{
+    width: 560px;
+    height: 315px;
+}
+
