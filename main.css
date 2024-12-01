@@ -2,7 +2,7 @@
 body {
     overflow-x: hidden;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -93,7 +93,7 @@ h1 {
 }
 
 .Pealeht {
-    max-width: 1200px;
+    width: auto;
     margin: 0 auto;
     text-align: center;
     padding: 40px;
@@ -124,6 +124,7 @@ table {
     margin-top: 10px;
     background-color: rgb(253, 253, 253);
     font-family: Arial, sans-serif;
+    align-items: center;
 }
 .scrollwrapper{
     overflow: auto;
@@ -410,7 +411,6 @@ footer {
 }
 
 .footeritem {
-
     background-color: rgb(37, 40, 45);
     width: 20%;
     height:25%;
@@ -424,7 +424,6 @@ footer {
     padding-bottom: 2px;
     padding-left: 2rem;
     padding-bottom: 0.5rem;
-    
 }
 
 .footerlogo {
@@ -433,4 +432,34 @@ footer {
     height: auto;
     margin-left: 2rem;
     float: left;
+}
+
+.popuptext {
+    opacity: 0; /* Initially invisible */
+    animation: fadeIn 2s ease-out forwards; /* Fade-in animation */
+    animation-delay: 0.5s;
+    }
+
+@keyframes moveUp {
+    from {
+        transform: translateY(100vh); /* Start below the screen */
+        opacity: 0; /* Invisible */
+    }
+    to {
+        transform: translateY(0); /* Final position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Fully transparent */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+.movingtext {
+    position: relative;
+    animation: moveUp 1s ease-out;
 }

@@ -43,14 +43,6 @@
 .vaheleht_table {
     width: 50%;
     margin: 0 auto;
-    background-color: white;
-    border-collapse: collapse;
-    align-items: center;
-}
-.vaheleht_table td, th, tr {
-    padding: 8px;
-    text-align: center;
-    background-color: white; 
 }
 
 .overbox {
@@ -70,38 +62,12 @@
     border-top: 3px solid black;
 }
 
-@keyframes moveUp {
-    from {
-        transform: translateY(100vh); /* Start below the screen */
-        opacity: 0; /* Invisible */
-    }
-    to {
-        transform: translateY(0); /* Final position */
-        opacity: 1; /* Fully visible */
-    }
-}
-.popuptext {
-    opacity: 0; /* Initially invisible */
-    animation: fadeIn 2s ease-out forwards; /* Fade-in animation */
-    animation-delay: 0.5s;
-    }
-@keyframes fadeIn {
-    from {
-        opacity: 0; /* Fully transparent */
-    }
-    to {
-        opacity: 1; /* Fully visible */
-    }
-}
+
 
 .navlink:hover::after {
     width: 100%;  /* Underline width expands to 100% of the link */
 }
 
-.movingtext {
-    position: relative;
-    animation: moveUp 1s ease-out;
-}
 
 .price {
     font-size:5rem;
@@ -130,11 +96,6 @@
     color: rgba(50, 50, 50, 0.3)
 }
 
-.content {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-}
 .content p {
     text-align: center;
     font-size:1.15rem;
