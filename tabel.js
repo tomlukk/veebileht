@@ -145,7 +145,7 @@ function u_keysSort(u_keys, sorted_keys){
 function loo_tabel(){
   esimene = document.getElementById("esimene").value
   teine = document.getElementById("teine").value
-  kolmas =document.getElementById("kolmas").value
+  kolmas = document.getElementById("kolmas").value
   keys = [esimene, teine, kolmas]
   un_keys = []
   for (const key of keys){
@@ -153,10 +153,9 @@ function loo_tabel(){
       un_keys.push(key)
     }
   }
-  console.log(un_keys)
-  console.log()
   createTable(un_keys)
 }
 
 document.getElementById("esimene").onchange = function() {loo_tabel()};
 document.getElementById("teine").onchange = function() {loo_tabel()};
+document.getElementById("kolmas").onchange = function() {loo_tabel()};
