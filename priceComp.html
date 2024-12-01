@@ -48,7 +48,6 @@
             </div> 
         </header>
         <div class="Pealeht" id="content">
-        <section>
             <div>
                 <h2>Hinnavõrdlus</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum imperdiet metus et fermentum. 
@@ -61,8 +60,40 @@
                     Cras malesuada fringilla urna at dictum. Phasellus in pretium felis.
                 </p><br>
             </div>
-        </section>
         <section>
+            <details>
+                <summary>Interaktiivne hinnavõrdlus</summary>
+                <div>
+                    <select id="esimene">
+                        <option value = "" selected disabled hidden>Vali mägi</option>
+                        <option value="Kütiorg">Kütiorg</option>
+                        <option value="Kuutsemägi_Munakas">Kuutsemägi/Munakas</option>
+                        <option value="Kiviõli_seikluskeskus">Kiviõli</option>
+                        <option value = "">Jäta valimata</option>
+                    </select>
+                    <select id="teine">
+                        <option value = "" selected disabled hidden>Vali mägi</option>
+                        <option value="Kütiorg">Kütiorg</option>
+                        <option value="Kuutsemägi_Munakas">Kuutsemägi/Munakas</option>
+                        <option value="Kiviõli_seikluskeskus">Kiviõli</option>
+                        <option value = "">Jäta valimata</option>
+                    </select>
+                    <select id="kolmas">
+                        <option value = "" selected disabled hidden>Vali mägi</option>
+                        <option value="Kütiorg">Kütiorg</option>
+                        <option value="Kuutsemägi_Munakas">Kuutsemägi/Munakas</option>
+                        <option value="Kiviõli_seikluskeskus">Kiviõli</option>
+                        <option value = "">Jäta valimata</option>
+                    </select>
+                </div>
+                <div class="scrollwrapper" id = "test">
+                    <script src="tabel.js"></script>
+                </div>
+            </details>
+            <details>
+                <summary>Hooajapiletid</summary>
+                    Something small enough to escape casual notice.
+            </details>
             <h3>Tabelid</h3>
         <div>
             <table>
@@ -123,21 +154,7 @@
             </table>
         </div>
         </section>
-        <div>
-            <select id="esimene">
-                <option value="Kütiorg">Kütiorg</option>
-                <option value="Kuutsemägi_Munakas">Kuutsemägi/Munakas</option>
-                <option value="Kiviõli_seikluskeskus">Kiviõli</option>
-            </select>
-            <select id="teine">
-                <option value="Kütiorg">Kütiorg</option>
-                <option value="Kuutsemägi_Munakas">Kuutsemägi/Munakas</option>
-                <option value="Kiviõli_seikluskeskus">Kiviõli</option>
-            </select>
-        </div>
-        <div id = "test">
-            <script src="tabel.js"></script>
-        </div>
+
         </div>>
         <footer>
             <div></div>

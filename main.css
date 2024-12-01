@@ -118,11 +118,15 @@ h1 {
 }
 table {
     width: 100%;
+    overflow: auto;
     border-collapse: separate;
     border-spacing: 0;
     margin-top: 10px;
     background-color: rgb(253, 253, 253);
     font-family: Arial, sans-serif;
+}
+.scrollwrapper{
+    overflow: auto;
 }
 th:not(.subheader){
     background-color: 		#e0d8ff
