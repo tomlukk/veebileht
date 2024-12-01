@@ -15,18 +15,6 @@ html {
     padding: 0;
 }
 
-.header {
-    background-image: url('https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467_1280.jpg');
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    height:15%;
-    width:100%;
-    position:fixed;
-    top:0;
-    right:0;
-}
-
 #content {
     background-color: white;
     padding: 20px;
@@ -40,53 +28,6 @@ h1 {
     color: #fff;
     text-align: center;
     flex-grow: 1;
-}
-.menüü-nupp {
-    position: relative;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.menüü-ikoon {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.menüü-ikoon span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
-    background-color: #fff;
-}
-.menüü-sisu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: auto;
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    text-align: center;
-    z-index: 10;
-}
-.menüü-nupp:hover .menüü-sisu,
-.menüü-sisu:hover {
-    display: block;
-}
-.menüü-sisu a {
-    display: block;
-    color: #000000;
-    text-decoration: none;
-    padding: 5px 0;
-    margin: 5px 0;
-}
-.menüü-sisu a:hover {
-    color: #660000;
 }
 
 .Pealeht {
@@ -173,31 +114,6 @@ table tr:last-child:not(.subheader) td:last-child {
 table tr:hover{
     background: #efefef;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-
-.background_image {
-    position: relative;
-    height: 300px;
-}
-.background_image img { 
-    display: block;
-    width: 100%;
-}
-
-
-.no-pad {
-    display: block;
-    margin: 0;
-    padding: 0%;
-}
 
 caption {
     font-family: Arial, sans-serif;
@@ -207,12 +123,6 @@ caption {
 h2 {
     font-family: Arial, sans-serif;
     font-size: 2.5em;
-}
-
-.bgvideo {
-    position: relative;
-    align-items: center;
-
 }
 
 .video-overlay {
@@ -318,14 +228,6 @@ h2 {
     display: inline-block;
 }
 
-.dropdown-menu {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -346,17 +248,9 @@ h2 {
     color: white; 
     text-decoration: none; 
     padding: 10px 15px; 
+    border-radius: 10px;
     
 }
-
-.dropdown-content a:hover {
-    background-color: #f0f0f0;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .dropdown-content a:hover {
     background-color: #ddd;
 }
@@ -365,15 +259,12 @@ h2 {
     display: block;
 }
 
-.dropdown:hover .dropdown-btn {
-    background-color: #3e8e41;
-}
-
 .navlink {
     text-decoration: none;
     color: white; 
     position: relative;
     padding-bottom: 2px;
+    cursor: pointer;
 }
 
 
