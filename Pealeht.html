@@ -11,8 +11,8 @@
     <header>
         <div class="video-container">
             <div class="video-text">
-                <h1 class="movingtext" onclick="scrollToSection()">Kuutsemägi</h1>
-                <p class="popuptext">Üks Eesti mägedest Eesti mägede seas</p>
+                <h1 class="movingtext" onclick="scrollToSection()">Eesti Suusamäed</h1>
+                <p class="popuptext">Saa tuttavaks imelistest Eesti suusamägedega!</p>
             </div>
             <video autoplay muted loop id="bgvideo">
                 <source src="img/kuutsemagi.mov" type="video/mp4">
@@ -26,11 +26,16 @@
                 </div>
                 <div class="navbar">
                     <div class="navbuttons">
-                        <div class="navbutton dropdown">
-                            <a href='vaheleht_template.html' class="navlink">MÄED</a>
-                        </div>
                         <div class="navbutton">
                             <a href='Pealeht.html' class="navlink">PEALEHT</a>
+                        </div>
+                        <div class="navbutton dropdown">
+                            <a class="navlink dropdown-btn">MÄED</a>
+                            <div class="dropdown-content">
+                                <a href="kuutsemagi.html">Kuutsemägi</a>
+                                <a href="munamagi.html">Munamägi</a>
+                                <a href="kutiorg.html">Kütiorg</a>
+                            </div>
                         </div>
                         <div class="navbutton">
                             <a href='priceComp.html' class="navlink">HINNAKIRI</a>
@@ -45,27 +50,27 @@
     </header>
     <div class="Pealeht" id="content">
         <section>
-            <h2>Ülevaade</h2>
+            <h2>Eesti Suusamäed</h2>
             <p>Mäed on looduskaunid sihtkohad, mis pakuvad võrratuid vaateid ja erakordseid matkamise võimalusi. Tutvu erinevate mägedega, igaüks neist pakub ainulaadseid elamusi. Allpool leiate ülevaate meie kolme populaarseima mäe kohta.</p>
         </section>
         <div class="div-mäekast">
             <section class="kast">
-                <img src="https://rosenhausen.ee/images/Vaike-Munamae-Ski-Resort-4.jpg" alt="Mägi A">
-                <h3>Mägi A</h3>
-                <p>Mägi A on ideaalne peredele ja algajatele matkajatele. Looduskaunid rajad ja vähem kärsitust nõudvad matkarajad teevad selle mäe populaarseks sihtkohaks.</p>
-                <a href="magi-a.html">Loe lähemalt Mägi A kohta</a>
+                <img src="https://kuutsemae.ee/get/image/userfiles/image/picture/241125qcsome.gif?w=1240&h=500&fit=crop" alt="Mägi A">
+                <h3>Kuutsemägi</h3>
+                <p>Kuutsemägi on ideaalne sihtkoht, kui otsid nii talviseid kui ka suviseid seiklusi looduses.</p>
+                <a href="kuutsemagi.html">Loe lähemalt Kuutsemäe kohta</a>
             </section>
             <section class="kast">
-                <img src="magib.jpg" alt="Mägi B">
-                <h3>Mägi B</h3>
-                <p>Mägi B on sobilik neile, kes otsivad tõelist matkamise väljakutset. Selle mäe rajad on mitmekülgsed ja pakuvad palju põnevust.</p>
-                <a href="magi-b.html">Loe lähemalt Mägi B kohta</a>
+                <img src="https://www.munakas.ee/get/image/userfiles/image/picture/241125mnksome.gif?w=1240&h=500&fit=crop" alt="Mägi B">
+                <h3>Munamägi</h3>
+                <p>Munamägi on ideaalne koht suusatamiseks neile, kes otsivad tasakaalu mugavuse ja väljakutsete vahel.</p>
+                <a href="munamagi.html">Loe lähemalt Munamäe kohta</a>
             </section>
             <section class="kast">
-                <img src="magic.jpg" alt="Mägi C">
-                <h3>Mägi C</h3>
-                <p>Mägi C on meie kõige kõrgem ja nõudlikum mägi, mis sobib kogenud matkajatele. Väljakutsuvad rajad ja hingematvad vaated on kõik, mida võiksite soovida.</p>
-                <a href="magi-c.html">Loe lähemalt Mägi C kohta</a>
+                <img src="https://kutiorg.ee/storage/app/media/AVALEHT/Avaleht1.jpg" alt="Mägi C">
+                <h3>Kütiorg</h3>
+                <p>Kütiorg on eksklusiivne suusamägi, mis pakub tõelisi väljakutseid kogenud suusatajatele ja mäesuusafännidele, kes otsivad midagi rohkemat.</p>
+                <a href="kutiorg.html">Loe lähemalt Kütioru kohta</a>
             </section>
         </div>
         <section>
@@ -81,17 +86,17 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="magi-c.html">Mägi A</a></td>
+                        <td><a href="kuutsemagi.html">Kuutsemägi</a></td>
                         <td>2000</td>
                         <td>Kerge</td>
                     </tr>
                     <tr>
-                        <td><a href="magi-c.html">Mägi B</a></td>
+                        <td><a href="munamagi.html">Munamägi</a></td>
                         <td>2500</td>
                         <td>Kesk</td>
                     </tr>
                     <tr>
-                        <td><a href="magi-c.html">Mägi C</a></td>
+                        <td><a href="Kutiorg.html">Kütiorg</a></td>
                         <td>3000</td>
                         <td>Raske</td>
                     </tr>
@@ -99,5 +104,29 @@
             </table>
         </section>
     </div>
+    <footer>
+        <div></div>
+        <div class="footeritem">
+            <h4 class="footerlink">Kontaktid</h4>
+            <p class="footerlink"> Tel. nr: (+372) 5621 9999</p>
+            <p class="footerlink"> Aadress: Narva mnt 18, 51009 Tartu</p>
+            <p class="footerlink"> Email: jaanus@ut.ee</p>
+        </div>
+        <div class="footeritem"></div>
+        <div class="footeritem">
+            <div>
+                <h4 class="footerlink">Mäed</h4>
+                <a href="kuutsemagi.html" class="footerlink">Kuutsemägi</a>
+                <a href="munamagi.html" class="footerlink">Väike-Munamägi</a>
+                <a href="kutiorg.html" class="footerlink">Kütiorg</a>
+            </div>
+        </div>
+        <div class="footeritem">
+            <h4 class="footerlink">Sotsiaalmeedia</h4>
+            <a href="https://www.facebook.com"><img src="img/facebook.svg" class="footerlogo"></a>
+            <a href="https://www.instagram.com"><img src="img/Instagram.svg" class="footerlogo"></a>
+            <a href="https://www.twitter.com"><img src="img/twitter.svg" class="footerlogo"></a>
+        </div>
+    </footer>
 </body>
 </html>

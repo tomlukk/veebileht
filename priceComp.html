@@ -10,8 +10,8 @@
         <header>
             <div class="video-container">
                 <div class="video-text">
-                    <h1 class="movingtext" onclick="scrollToSection()">Kuutsemägi</h1>
-                    <p class="popuptext">Üks Eesti mägedest Eesti mägede seas</p>
+                    <h1 class="movingtext" onclick="scrollToSection()">Eesti suusamägede hinnad</h1>
+                <p class="popuptext">Saa tuttavaks millised on Eesti suusamägede hinnakirjad ja leia endale parim variant!</p>
                 </div>
                 <video autoplay muted loop id="bgvideo">
                     <source src="img/kuutsemagi.mov" type="video/mp4">
@@ -25,11 +25,16 @@
                     </div>
                     <div class="navbar">
                         <div class="navbuttons">
-                            <div class="navbutton dropdown">
-                                <a href='vaheleht_template.html' class="navlink">MÄED</a>
-                            </div>
                             <div class="navbutton">
                                 <a href='Pealeht.html' class="navlink">PEALEHT</a>
+                            </div>
+                            <div class="navbutton dropdown">
+                                <a class="navlink dropdown-btn">MÄED</a>
+                                <div class="dropdown-content">
+                                    <a href="kuutsemagi.html">Kuutsemägi</a>
+                                    <a href="munamagi.html">Munamägi</a>
+                                    <a href="kutiorg.html">Kütiorg</a>
+                                </div>
                             </div>
                             <div class="navbutton">
                                 <a href='priceComp.html' class="navlink">HINNAKIRI</a>
@@ -134,5 +139,29 @@
             <script src="tabel.js"></script>
         </div>
         </div>>
+        <footer>
+            <div></div>
+            <div class="footeritem">
+                <h4 class="footerlink">Kontaktid</h4>
+                <p class="footerlink">Tel. nr: (+372) 5621 9999</p>
+                <p class="footerlink">Aadress: Narva mnt 18, 51009 Tartu</p>
+                <p class="footerlink">Email: jaanus@ut.ee</p>
+            </div>
+            <div class="footeritem"></div>
+            <div class="footeritem">
+                <div>
+                    <h4 class="footerlink">Mäed</h4>
+                    <a href="kuutsemagi.html" class="footerlink">Kuutsemägi</a>
+                    <a href="munamagi.html" class="footerlink">Väike-Munamägi</a>
+                    <a href="kutiorg.html" class="footerlink">Kütiorg</a>
+                </div>
+            </div>
+            <div class="footeritem">
+                <h4 class="footerlink">Sotsiaalmeedia</h4>
+                <a href="https://www.facebook.com"><img src="img/facebook.svg" class="footerlogo"></a>
+                <a href="https://www.instagram.com"><img src="img/Instagram.svg" class="footerlogo"></a>
+                <a href="https://www.twitter.com"><img src="img/twitter.svg" class="footerlogo"></a>
+            </div>
+        </footer>
     </body>
 </html>
