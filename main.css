@@ -305,7 +305,7 @@ footer {
     background-color: rgb(37, 40, 45);
     width: 20%;
     height:25%;
-    text-align: center;
+    text-align: left;
 }
 
 .footerlink {
@@ -362,7 +362,11 @@ footer {
 }
 
 /* SELECT */
-
+section details{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
 details > summary{
     background-color: white;
     margin-top: 20px;
