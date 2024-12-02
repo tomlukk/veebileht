@@ -126,12 +126,14 @@ async function createTable(mägede_nimed = []){
   document.getElementById("test").append(tbl)
 }
 
+//Fetchib json failist objektid
 async function fetchCurrentData() {
   const response = await fetch('./hinnad.json');
   const json = await response.json();
   return json;
 }
 
+//Tagastab sorteeritud võtmete listi
 function u_keysSort(u_keys, sorted_keys){
   new_keys = [];
   for (const key of sorted_keys){
@@ -142,6 +144,7 @@ function u_keysSort(u_keys, sorted_keys){
   return new_keys
 }
 
+//Loob tabeli kasutajalt saadud mägede kohta
 function loo_tabel(){
   esimene = document.getElementById("esimene").value
   teine = document.getElementById("teine").value
@@ -156,6 +159,7 @@ function loo_tabel(){
   createTable(un_keys)
 }
 
+//eventlistenerid, et pidevalt jälgida kas kasutaja on valinud uue mäe
 document.getElementById("esimene").onchange = function() {loo_tabel()};
 document.getElementById("teine").onchange = function() {loo_tabel()};
 document.getElementById("kolmas").onchange = function() {loo_tabel()};
