@@ -22,7 +22,7 @@ async function createTable(mägede_nimed = []){
     let len = hinnakiri[mägede_nimed[i]].hor_len;
     let th = document.createElement('th');
     th.setAttribute("colspan", len)
-    th.innerHTML = mägede_nimed[i];
+    th.innerHTML = hinnakiri[mägede_nimed[i]].nimi;
     tr.appendChild(th);
   };
 
